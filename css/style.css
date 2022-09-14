@@ -1,0 +1,259 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0px;
+}
+
+/* navigation bar*/
+#navbar::before {
+    content: "";
+    color: white;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation bar:Logo and Image */
+#logo {
+    margin: 38px 45px;
+}
+
+
+#logo img {
+    height: 72px;
+    margin: -21px 0px;
+}
+
+/*Navigation bar: List styling */
+#navbar {
+    background-color: #5f5859;
+    position: relative;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    /* color: white; */
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    list-style: none;
+    border-radius: 20px;
+    padding: 10px 70px;
+    text-decoration: none;
+    margin: -7px 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+li a {
+    color: white;
+
+}
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 300px;
+    align-items: center;
+    height: 450px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#home::before {
+    content: "";
+    color: white;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+} 
+
+/* Client section */
+#client-section {
+    position: relative;
+    height: 388px;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url(https://img.freepik.com/premium-photo/black-food-cooking-background-stone-texture-with-sea-salt-pepper-garlic-parsley-abstract-food-background-empty-space-text-can-be-used-food-posters-design-menu-top-view_253362-16205.jpg?w=2000) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 124px;
+}
+
+
+.client-item {
+    padding: 38px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contactus.jpg)no-repeat center center/cover;
+}
+
+footer{
+    background:black;
+    color: white;
+    padding:9px 20px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 6px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-weight: bold;
+    font-size: 1.7rem;
+
+}
+
+
+
+
+/* Utility classes */
+/* services section */
+.services-container {
+    display: flex;
+    border: 2px solid red;
+    background-color: #d0d0d0;
+    padding: 70px -15px;
+
+}
+
+.services.box {
+    border: 2px solid red;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.box img {
+    height: 160px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.services.box p {
+    font-size: 2.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    height: auto;
+    margin: 24px -9px;
+    /* user-select: auto; */
+}
+
+.h-secondary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 18px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
